@@ -1,24 +1,22 @@
-# README
+# Hotwire code example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I copied the code from DHH's screencast on the [hotwire.dev](https://hotwire.dev/#screencast) homepage.
 
-Things you may want to cover:
+# How to run the example
+You will need rails 6.1, docker and docker-compose
 
-* Ruby version
+### Start redis
+```
+docker-compose up -d
+```
+this should start redis on port 6379
 
-* System dependencies
+### Start rails
+```
+bundle install
+rails db:create
+rails s
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Try the app
+Go to `http://localhost:3000/rooms`
