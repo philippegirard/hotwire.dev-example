@@ -20,3 +20,10 @@ rails s
 
 # Try the app
 Go to `http://localhost:3000/rooms`
+
+# Other
+check the commits: https://github.com/philippegirard/hotwire.dev-example/commits
+
+I tried to layer them by steps. 
+
+You can ignore everything in the `.idea` folder. These are IDE specific configurations.
